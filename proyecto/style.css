@@ -1,0 +1,116 @@
+body {
+    background-color: black;
+}
+.container {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    margin: 200px auto;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.sol {
+    width: 110px;
+    height: 110px;
+    background-color: rgb(247, 164, 75);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+    animation-name: ocultarse;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+
+}
+
+@keyframes ocultarse {
+    from {
+        bottom: -10px;
+        background-color: darkgoldenrod;
+    }
+
+    to {
+        bottom: 400px;
+        background-color: yellow;
+    }
+}
+
+.montaña {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: -0.9%;
+    right: 170px;
+    transform: scaleX(2.3);
+    
+}
+
+.nube1 {
+    width: 100px;
+    position: absolute;
+    top: 90;
+    left: 0;
+    animation-name: mover-nube1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: scaleX(-2);
+    
+}
+
+@keyframes mover-nube1 {
+    from {
+        right: -10px;
+        
+    }
+
+    to {
+        left: 1200px;
+       
+    }
+}
+
+.nube2 {
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    animation-name: mover-nube2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: scaleX(-0.5);
+    
+}
+
+@keyframes mover-nube2 {
+    from {
+        right: -100px;
+        
+    }
+
+    to {
+        left: 1200px;
+       
+    }
+}
+
+.nube3 {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.nube4 {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 100;
+    left: 200;
+}
