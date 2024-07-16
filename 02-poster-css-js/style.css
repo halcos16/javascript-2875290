@@ -1,0 +1,168 @@
+body {
+    background-color: black;
+}
+.container {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    margin: 200px auto;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.sol {
+    width: 110px;
+    height: 110px;
+    background-color: rgb(247, 164, 75);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+    /*animation-name: ocultarse;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;*/
+    
+    
+
+}
+
+@keyframes ocultarse {
+    from {
+        bottom: 70px;
+        background-color: rgb(252, 250, 124);
+    }
+
+    to {
+        bottom: 400px;
+        background-color: rgb(235, 97, 17);
+    }
+}
+
+.guia {
+    z-index: 5;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.montaña {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: -0.9%;
+    right: 170px;
+    transform: scaleX(2.3);
+    
+}
+
+.nube1 {
+    width: 10px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    animation-name: mover-nube1;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: scaleX(50%);
+    transform: scaleY(50%);
+    z-index: 1;
+   
+    
+}
+
+@keyframes mover-nube1 {
+    from {
+        left: 400px;
+        
+    }
+
+    to {
+        right: -300px;
+       
+    }
+}
+
+.nube2 {
+    width: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    animation-name: mover-nube2;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: scaleX(80%);
+    transform: scaleY(20%);
+   
+    
+}
+
+@keyframes mover-nube2 {
+    from {
+        left: 100px;
+        
+    }
+
+    to {
+        right: 1200px;
+       
+    }
+}
+
+.nube3 {
+    width: 10px;
+    position: absolute;
+    top: -110px;
+    left: 0;
+    animation-name: mover-nube3;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: scaleX(80%);
+    transform: scaleY(40%);
+    z-index: 2;
+   
+    
+}
+
+@keyframes mover-nube3 {
+    from {
+        right: 1000px;
+        
+    }
+
+    to {
+        left: 1100px;
+       
+    }
+}
+
+.nube4 {
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    animation-name: mover-nube4;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: scaleX(20%);
+    transform: scaleY(20%);
+   
+    
+}
+
+@keyframes mover-nube4 {
+    from {
+        right: 50px;
+        
+    }
+
+    to {
+        left: 1100px;
+       
+    }
+}
+
