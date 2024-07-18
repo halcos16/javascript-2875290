@@ -6,6 +6,9 @@ const goblin = document.querySelector(".goblin");
 const nube1 = document.querySelector(".nubenegra");
 const nube2 = document.querySelector(".nubenegra2");
 const nube3 = document.querySelector(".nuberosa");
+let e = 0
+
+
 
 function correr () {
     contenedor.style.animationPlayState = 'running';
@@ -16,5 +19,6 @@ function correr () {
     nube2.style.animationPlayState = 'running';
     nube3.style.animationPlayState = 'running';
 }
+
 
 reproducir.addEventListener('click', correr)
