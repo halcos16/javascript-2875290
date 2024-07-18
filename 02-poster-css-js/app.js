@@ -1,30 +1,20 @@
-const fondo = document.querySelector('.container')
-const sol1 = document.querySelector('.sol')
-const fantasma = document.querySelector('.guia')
-const nubeUno = document.querySelector('.nube1')
-const nubeDos = document.querySelector('.nube2')
-const nubeTres = document.querySelector('.nube3')
-const nubeCuatro = document.querySelector('.nube4')
+const reproducir = document.querySelector(".play");
+const contenedor = document.querySelector(".container");
+const luna = document.querySelector(".luna");
+const spider = document.querySelector(".araña");
+const goblin = document.querySelector(".goblin");
+const nube1 = document.querySelector(".nubenegra");
+const nube2 = document.querySelector(".nubenegra2");
+const nube3 = document.querySelector(".nuberosa");
 
-function moversol1 (){
-    sol1.style.animationName = 'ocultarse'
-    sol1.style.animationDuration = '3s'
-    sol1.animationTimingFunction = 'linear'
-    sol1.animationIterationCount = 'infinite'
-    fantasma.style.animation = 'move 3s linear'
-    
+function correr () {
+    contenedor.style.animationPlayState = 'running';
+    luna.style.animationPlayState = 'running';
+    spider.style.animationPlayState = 'running';
+    goblin.style.animationPlayState = 'running';
+    nube1.style.animationPlayState = 'running';
+    nube2.style.animationPlayState = 'running';
+    nube3.style.animationPlayState = 'running';
 }
 
-function noche (){
-    fondo.style.backgroundColor = 'black'
-    fondo.style.transitionDuration = '5s'
-    sol1.style.backgroundColor = 'white'
-    
-}
-
-fantasma.addEventListener('click', moversol1)
-fondo.addEventListener('click', noche)
-
-
-
-
+reproducir.addEventListener('click', correr)
