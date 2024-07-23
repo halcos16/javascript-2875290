@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(0.4rem);
+    
+}
+
+.contenedor {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    color: aquamarine;
+    border-radius: 15%;
+    box-shadow: grey 5px 5px 5px 5px;
+
+}
+
+.contenedor > h1 {
+    margin-bottom: 30px;
+}
+
+.texto {
+    width: 480px;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(205, 218, 213);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(133,175,164,0.14609593837535018) 35%, rgba(0,212,255,1) 100%);
+       
+}
+
+.crear {
+    width: 100px;
+    background-color: rgb(192, 211, 205);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,92,0.6306897759103641) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 15px;
+}
+
+.limpiar {
+    width: 100px;
+    background-color: rgb(192, 211, 205);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,92,0.6306897759103641) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 15px;
+}
+
+.lista-tareas {
+    text-align: left;
+    margin-top: 20px;
+    color: aquamarine;
+    border-radius: 5%;
+    box-shadow: 5px 5px;
+}
+
+.tarea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.tarea span {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.tarea button {
+    margin-left: 10px;
+    
+}
