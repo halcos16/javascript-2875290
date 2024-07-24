@@ -1,4 +1,4 @@
-/*document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const crearBtn = document.querySelector('.crear');
     const limpiarBtn = document.querySelector('.limpiar');
     const listaTareas = document.querySelector('.lista-tareas');
@@ -34,4 +34,4 @@
     limpiarBtn.addEventListener('click', function() {
         listaTareas.innerHTML = ''; // Limpiar todas las tareas
     });
-});*/
+});
