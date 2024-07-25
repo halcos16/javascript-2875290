@@ -1,37 +1,42 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const crearBtn = document.querySelector('.crear');
-    const limpiarBtn = document.querySelector('.limpiar');
+const inputTexto = document.querySelector('.texto');
+    const botonCrear = document.querySelector('.crear');
+    const botonLimpiar = document.querySelector('.limpiar');
     const listaTareas = document.querySelector('.lista-tareas');
-    const inputTarea = document.querySelector('.texto');
 
-    crearBtn.addEventListener('click', function() {
-        const tareaTexto = inputTarea.value.trim();
 
-        if (tareaTexto !== '') {
-            const tarea = document.createElement('div');
-            tarea.className = 'tarea';
-            tarea.innerHTML = `
-                <span>${tareaTexto}</span>
-                <button class="borrar-btn">X</button>
-            `;
-            listaTareas.appendChild(tarea);
-            inputTarea.value = '';
+function crearTarea() {
 
-            // Agregar evento para tachar tarea al hacer click
-            tarea.addEventListener('click', function() {
-                tarea.classList.toggle('tachado');
-            });
+    const nuevaTarea = document.createElement('div');
+    const textoTarea = document.createElement('span');
+    const botonBorrar = document.createElement('button');
 
-            // Agregar evento para borrar tarea
-            const borrarBtn = tarea.querySelector('.borrar-btn');
-            borrarBtn.addEventListener('click', function(event) {
-                event.stopPropagation(); // Evitar que se propague el evento click del div tarea
-                tarea.remove();
-            });
+    nuevaTarea.classList.add('tarea');
+    textoTarea.textContent = inputTexto.value;
+    botonBorrar.textContent = 'X';
+
+    botonBorrar.onclick = function() {
+    nuevaTarea.remove();
+    };
+
+    nuevaTarea.onclick = function() {
+        if (textoTarea.style.textDecoration === 'line-through') {
+            textoTarea.style.textDecoration = 'none';
+            
+        } else {
+            textoTarea.style.textDecoration = 'line-through';
         }
-    });
+    };
 
-    limpiarBtn.addEventListener('click', function() {
-        listaTareas.innerHTML = ''; // Limpiar todas las tareas
-    });
-});
+    nuevaTarea.appendChild(textoTarea);
+    nuevaTarea.appendChild(botonBorrar);
+    listaTareas.appendChild(nuevaTarea);
+
+    inputTexto.value = '';
+}
+
+function limpiarTareas() {
+    listaTareas.innerHTML = '';
+}
+
+botonCrear.addEventListener('click', crearTarea);
+botonLimpiar.addEventListener('click', limpiarTareas);
