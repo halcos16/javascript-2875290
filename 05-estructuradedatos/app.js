@@ -1,22 +1,26 @@
-/* id, nombre, year, genero, image*/
-let peliculas = [
-    {
-        id: 1,
-        nombre: 'Twisters',
-        year: 2024,
-        direccion: 'Lee Isaac Chung',
-        guionistas: ['Mark L. Smith','Michael Crichton','Joseph Kosinski'],
-        genero: 'acción',
-        image: 'https://upload.wikimedia.org/wikipedia/en/2/24/Twisters_Official_US_Theatrical_Poster.jpg'
-    },
-    {
-        id: 1,
-        nombre: 'Twisters',
-        year: 2024,
-        direccion: 'Lee Isaac Chung',
-        guionistas: ['Mark L. Smith','Michael Crichton','Joseph Kosinski'],
-        genero: 'acción',
-        image: 'https://upload.wikimedia.org/wikipedia/en/2/24/Twisters_Official_US_Theatrical_Poster.jpg'
-    }
-]
 
+//console.log (peliculas[22].genero[1]
+/*peliculas.forEach(element => {
+    console.log(element)
+});*/
+
+const contenedor = document.querySelector('.container')
+
+peliculas.forEach(element => {
+    let card =  document.createElement('div');
+    
+    card.innerHTML = `
+    <section class="tarjeta">
+        <div class="contenedor">
+            <img src="${element.image}">
+            <div class="name">Nombre: ${element.nombre}</div>
+            <div class="direct">Director: ${element.direccion}</div>
+            <div class="prot">Protagonistas: ${element.protagonistas[0]}.</div>
+            <div class="gen">Genero: ${element.genero[0]}</div>
+            <div class="year">${element.year}</div>
+        </div>
+    </section>`
+    
+    contenedor.appendChild(card);
+    
+});
