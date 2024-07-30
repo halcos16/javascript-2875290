@@ -24,7 +24,7 @@ let peliculas = [
         year: 1994,
         direccion: 'Frank Darabont',
         protagonistas: ['Tim Robbins', 'Morgan Freeman'],
-        genero: 'Drama',
+        genero: ['Drama'],
         image: 'https://images.justwatch.com/poster/263278112/s166/cadena-perpetua.webp'
     },
     {
@@ -123,7 +123,7 @@ let peliculas = [
         year: 1968,
         direccion: 'Sergio Leone',
         protagonistas: ['Henry Fonda', 'Charles Bronson', 'Claudia Cardinale'],
-        genero: 'Western',
+        genero: ['Western'],
         image: 'https://images.justwatch.com/poster/129242620/s166/hasta-que-llego-su-hora.webp'
     },
     {
@@ -222,7 +222,7 @@ let peliculas = [
         year: 1966,
         direccion: 'Sergio Leone',
         protagonistas: ['Clint Eastwood', 'Eli Wallach', 'lee Van Cleef'],
-        genero: 'Western',
+        genero: ['Western'],
         image: 'https://images.justwatch.com/poster/249120592/s166/el-bueno-el-feo-y-el-malo.webp'
     },
     {

@@ -4,37 +4,55 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: auto;
+    flex-wrap: wrap;
     background: radial-gradient(circle, rgba(15,151,152,1) 0%, rgba(238,101,55,0.6503851540616247) 100%, rgba(0,212,255,1) 100%);
+}
+
+.cabeza {
+    width: 100%;
+    padding: 5%;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(4,1,15,0.9416141456582633) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    color: rgb(255, 255, 255);
 }
 
 .tarjeta {  
     width: 330px;
     height: 550px;
     display: flex;
+    padding: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column;
-    color: white;   
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    margin-left: 20px;   
     box-shadow: rgb(166, 163, 157) 0px 2px 2px 1px; 
     background: linear-gradient(0deg, rgba(2,0,36,0.3618697478991597) 0%, rgba(238,101,55,0.6503851540616247) 100%, rgba(0,212,255,1) 100%);
 
 }
 
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 280px;
-    height: 490px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 5px;
+    row-gap: 40px;
+    column-gap: normal;
+    align-items: normal;
+    margin: 20px;
+    width: 100%;
     text-align: center;
+    flex-wrap: wrap;
     color: rgb(11, 11, 11);
-    font-size: medium;
+    font-size: larger;
     font-family: "Bebas Neue", sans-serif;
     border-radius: 30px;
     box-shadow: rgb(166, 163, 157) 2px 2px 2px 2px;
-    background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(48,212,133,0.7959558823529411) 35%, rgba(0,212,255,1) 100%);
 }
 
@@ -42,7 +60,7 @@ body {
     width: 50%;
     height: 50%;
     border-radius: 5px;
-    background-image: url(https://images.justwatch.com/poster/123122757/s166/el-padrino.webp);
+    background-image: url();
     margin-top: 20px;
 }
 
@@ -74,7 +92,7 @@ body {
 }
 
 .gen {
-   width: 80%;
+    width: 80%;
     height: 5%;
     margin-top: 10px;
     padding: auto;
