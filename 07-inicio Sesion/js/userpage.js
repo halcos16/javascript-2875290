@@ -24,3 +24,7 @@ peliculas.forEach(element => {
     contenedor.appendChild(card);
     
 });
+
+function redirigir() {
+    window.location.href = "./registro.html";
+}

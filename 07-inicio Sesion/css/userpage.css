@@ -76,3 +76,17 @@ body {
     text-align: start;
 }
 
+.salir {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(93, 31, 72);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.salir:hover {
+    background-color: #45a049;
+}
+
