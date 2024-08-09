@@ -1,7 +1,8 @@
+/* id, nombre, year, genero, image*/
 let peliculas = [
     {
         id: 1,
-        nombre: 'El padrino',
+        nombre: 'El padrino I',
         year: 1972,
         direccion: 'Francis Ford Coppola',
         protagonistas: ['Marlon Brando', 'Al Pacino', 'James Caan'],
@@ -23,7 +24,7 @@ let peliculas = [
         year: 1994,
         direccion: 'Frank Darabont',
         protagonistas: ['Tim Robbins', 'Morgan Freeman'],
-        genero: ['Drama'],
+        genero: 'Drama',
         image: 'https://images.justwatch.com/poster/263278112/s166/cadena-perpetua.webp'
     },
     {
@@ -122,7 +123,7 @@ let peliculas = [
         year: 1968,
         direccion: 'Sergio Leone',
         protagonistas: ['Henry Fonda', 'Charles Bronson', 'Claudia Cardinale'],
-        genero: ['Western'],
+        genero: 'Western',
         image: 'https://images.justwatch.com/poster/129242620/s166/hasta-que-llego-su-hora.webp'
     },
     {
@@ -163,7 +164,7 @@ let peliculas = [
     },
     {
         id: 19,
-        nombre: 'El Padrino 2',
+        nombre: 'El Padrino II',
         year: 1974,
         direccion: 'Francis Ford Coppola',
         protagonistas: ['Rober De Niro', 'Al Pacino', 'Robert Duvall'],
@@ -221,7 +222,7 @@ let peliculas = [
         year: 1966,
         direccion: 'Sergio Leone',
         protagonistas: ['Clint Eastwood', 'Eli Wallach', 'lee Van Cleef'],
-        genero: ['Western'],
+        genero: 'Western',
         image: 'https://images.justwatch.com/poster/249120592/s166/el-bueno-el-feo-y-el-malo.webp'
     },
     {
@@ -270,3 +271,4 @@ let peliculas = [
         image: 'https://images.justwatch.com/poster/8542107/s166/aliens-el-regreso.webp'
     },
 ]
+
